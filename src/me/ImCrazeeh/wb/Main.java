@@ -12,6 +12,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener {
 	
+	/*
+	 * Plugin made by ImCrazeeh, please do not use this code and claim it as your own!
+	*/
+	
     Permission playerPermission = new Permission("wb.reload");
     Permission playerPermission1 = new Permission("wb.see");
 	
@@ -25,20 +29,20 @@ public class Main extends JavaPlugin implements Listener {
 		if (cmd.getName().equalsIgnoreCase("wordblock")) {
 			if (args.length == 0) {
 				if (sender.hasPermission("wb.see")) {
-				sender.sendMessage("ง8[ง4*ง8] ง6WordBlock Commands ง8[ง4*ง8]");
-				sender.sendMessage(" ง8[ง7*ง8] งd/wordblock reload ง8- ง7งoUpdate your server to be using your new config.");
+				sender.sendMessage("ยง8[ยง4*ยง8] ยง6WordBlock Commands ยง8[ยง4*ยง8]");
+				sender.sendMessage(" ยง8[ยง7*ยง8] ยงd/wordblock reload ยง8- ยง7ยงoUpdate your server to be using your new config.");
 				}
 			}
 			if (args.length == 1) {
 				if (args[0].equalsIgnoreCase("reload")) {
 					if (sender.hasPermission("wb.reload")) {
-						sender.sendMessage("ง4WordBlock v" + this.getDescription().getVersion() + " งchas been reloaded.");
+						sender.sendMessage("ยง4WordBlock v" + this.getDescription().getVersion() + " ยงchas been reloaded.");
 						reloadConfig();
 					}
 				}
 				else {
 					if (sender.hasPermission("wb.see")) {
-						sender.sendMessage("ง7Unknown args.");
+						sender.sendMessage("ยง7Unknown args.");
 					}
 				}
 			}
