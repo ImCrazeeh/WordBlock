@@ -1,0 +1,7 @@
+block-msg: '&cYou are not allowed to send this message in chat!'
+blocked-words:
+   - 'word1'
+   - 'word2'
+   - 'word3'
+   - 'word4'
+   - 'word5'

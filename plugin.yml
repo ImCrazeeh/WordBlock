@@ -1,0 +1,8 @@
+name: WordBlock
+version: 1.2
+author: ImCrazeeh
+main: me.ImCrazeeh.wb.Main
+commands:
+    wordblock:
+     description: Main command for WordBlock
+     usage: /<command>
